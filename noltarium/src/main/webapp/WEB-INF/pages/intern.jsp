@@ -10,9 +10,8 @@
 	</div>
 	<div id="content">
 
-		<h1>Wilkommen : ${message}</h1>
+		<h1>Interne Seite : ${message}</h1>
 		
-		<jsp:include page="login.jsp" />
 	</div>
 </body>
 </html>

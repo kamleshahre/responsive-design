@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import de.noltarium.page.model.PageUser;
 
 @Controller
-@RequestMapping("/login.do")
+@RequestMapping("/login")
 public class LoginController {
 
 	private static final Logger LOGGER = LoggerFactory
@@ -34,9 +34,10 @@ public class LoginController {
 		if(result.hasErrors())
 		{
 			LOGGER.debug("Has Errors");
+			return "hello";
 		}
 
-		return "hello";
+		return "redirect:intern";
 	}
 
 }

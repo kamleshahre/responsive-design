@@ -3,7 +3,7 @@
 
 <h1>LOGIN</h1>
 
-<form:form method="post" commandName="user" action="login.do">
+<form:form method="post" commandName="user" action="login">
 
 
 	<fieldset>
