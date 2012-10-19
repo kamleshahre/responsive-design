@@ -1,0 +1,9 @@
+*.settings
+*.project
+*.classpath
+/target
+/.gitignore~
+/cycleStore/datenbank/database/mydb.lck
+/cycleStore/datenbank/database/mydb.log
+/cycleStore/datenbank/database/mydb.properties
+/cycleStore/datenbank/database/mydb.script
