@@ -11,6 +11,8 @@
 	<div id="content">
 
 		<h1>Message : ${message}</h1>
+		
+		<jsp:include page="login.jsp" />
 	</div>
 </body>
 </html>
