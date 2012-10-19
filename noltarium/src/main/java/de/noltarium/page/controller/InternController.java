@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 @Controller
-@RequestMapping("/intern")
+@RequestMapping("/intern/main")
 public class InternController {
 
 	private static final Logger LOGGER = LoggerFactory
