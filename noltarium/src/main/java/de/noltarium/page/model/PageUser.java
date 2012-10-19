@@ -1,9 +1,16 @@
 package de.noltarium.page.model;
 
+import javax.validation.constraints.NotNull;
+
+import org.hibernate.validator.constraints.NotBlank;
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class PageUser {
 
+	@NotEmpty
 	private String loginName;
-
+	
+	@NotEmpty
 	private String password;
 
 	public String getLoginName() {

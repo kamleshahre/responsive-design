@@ -1,5 +1,7 @@
 package de.noltarium.page.controller;
 
+import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
@@ -26,12 +28,15 @@ public class LoginController {
 	}
 
 	@RequestMapping(value = "/login", method = RequestMethod.POST)
-	public String addContact(@ModelAttribute("user") PageUser contact,
+	public String signIn(@ModelAttribute("user") @Valid PageUser contact,
 			BindingResult result) {
+		LOGGER.debug("Try Sign in User {}",contact.getLoginName());
+		if(result.hasErrors())
+		{
+			LOGGER.debug("Has Errors");
+		}
 
-		LOGGER.debug("Try Sign In");
-
-		return "redirect:welcome";
+		return "hello";
 	}
 
 }

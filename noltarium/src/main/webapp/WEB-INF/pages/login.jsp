@@ -1,8 +1,5 @@
 <%@ taglib uri="http://www.springframework.org/tags" prefix="spring"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> --%>
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %> --%>
-<%-- <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %> --%>
 
 <h1>LOGIN</h1>
 
@@ -10,12 +7,14 @@
 
 
 	<fieldset>
-		<form:label path="loginName">First Name</form:label>
-		<form:input path="loginName" />
+		<form:errors element="div" path="loginName"  />
+		<form:label path="loginName" element="div">First Name</form:label>
+		<form:input path="loginName" element="div" />
 	</fieldset>
 	<fieldset>
-		<form:label path="password">Password</form:label>
-		<form:input path="password" />
+		<form:errors element="div" path="password" />
+		<form:label path="password" element="div">Password</form:label>
+		<form:input path="password" element="div" />
 	</fieldset>
 	<input type="submit" value="Add Contact" />
 
