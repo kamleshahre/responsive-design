@@ -1,2 +1,4 @@
-<a href="welcome" >Wilkommen</a>
-<a href="impressum" >Impressum</a>  
+<ul>
+	<li><a href="welcome">Wilkommen</a></li>
+	<li><a href="impressum">Impressum</a></li>
+</ul>

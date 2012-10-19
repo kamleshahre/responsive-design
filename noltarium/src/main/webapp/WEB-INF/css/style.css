@@ -1,0 +1,10 @@
+#content {
+	height: 100%;
+}
+
+#navigation {
+	float: left;
+	padding-right: 20;
+	clear: right;
+	height: 100%;
+}
