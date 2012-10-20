@@ -18,7 +18,7 @@ public class ImpressumController {
 	public String printWelcome(ModelMap model) {
 
 		model.addAttribute("message", "Impressum page");
-		return "hello";
+		return "impressum";
 
 	}
 
