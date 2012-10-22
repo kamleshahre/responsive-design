@@ -2,6 +2,7 @@
 <body>
 
 	<div data-role="page">
+	
 		<div data-role="navbar">
 			<jsp:include page="navigation.jsp" />
 		</div>

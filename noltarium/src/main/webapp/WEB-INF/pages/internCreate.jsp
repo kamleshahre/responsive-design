@@ -12,7 +12,7 @@
 			<h1>Create User</h1>
 		</div>
 		<div data-role="content"  >
-			<form:form commandName="exampleObject" action="create/sendForm" method="POST">
+			<form:form commandName="exampleObject" method="POST">
 				<fieldset>
 					<form:errors path="firstname" />
 					<form:label path="firstname">Vorname</form:label>

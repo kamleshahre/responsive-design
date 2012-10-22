@@ -23,8 +23,6 @@ public class InternCreateController {
 
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model, Principal principal) {
-		final String currentUser = principal.getName();
-		model.addAttribute("message", "bin drinne" + currentUser);
 
 		ExampleObject exampleObject = new ExampleObject();
 		model.addAttribute("exampleObject", exampleObject);
@@ -32,13 +30,22 @@ public class InternCreateController {
 
 	}
 
-	@RequestMapping(value = "/sendForm", method = RequestMethod.POST)
+	/**
+	 * Validate example for the user form.
+	 * 
+	 * @param customer
+	 * @param result
+	 * @return
+	 */
+	@RequestMapping(method = RequestMethod.POST)
 	public String addCustomer(@ModelAttribute("exampleObject") @Valid ExampleObject customer, BindingResult result) {
 
 		if (result.hasErrors()) {
+			LOGGER.debug("Has errors");
 			return "internCreate";
 		} else {
-			return "welcome";
+			LOGGER.debug("No errors");
+			return "/hello";
 		}
 
 	}

@@ -1,16 +1,3 @@
-#content {
-	height: 100%;
-	float:left;
-}
-
-#navigation {
-	float: left;
-	padding-right: 20;
-	clear: right;
-	height: 100%;
-}
-
-
 .hor-zebra
 {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
