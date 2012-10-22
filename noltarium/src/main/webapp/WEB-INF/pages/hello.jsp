@@ -17,4 +17,10 @@ the "supervisor" authority in their list of <tt>GrantedAuthority</tt>s.
 
 </sec:authorize>
 	</div>
+	<script>
+    $(function() {
+        $( ".fromButton" )
+            .button();
+    });
+</script>
 </body>

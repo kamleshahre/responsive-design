@@ -26,11 +26,8 @@ sd
 			<td><input type='password' name='j_password' value="admin" /></td>
 		</tr>
 		<tr>
-			<td colspan='2'><input name="submit" type="submit"
-				value="submit" /></td>
-		</tr>
-		<tr>
-			<td colspan='2'><input name="reset" type="reset" /></td>
+			<td colspan='2'><input class="fromButton" name="submit" type="submit"
+				value="submit" /><input class="fromButton" name="reset" type="reset" /></td>
 		</tr>
 	</table>
 
