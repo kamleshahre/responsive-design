@@ -1,13 +1,4 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
-<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
-<%@ taglib uri="http://www.springframework.org/tags" prefix="spring" %>
-
-<html>
-<head>
-<style type="text/css">
-<%@include file="../css/style.css" %>
-</style>
-</head>
+<%@ include file="defaultIncludes.jsp" %>
 <body>
 	<div id="navigation">
 		<jsp:include page="navigation.jsp" />

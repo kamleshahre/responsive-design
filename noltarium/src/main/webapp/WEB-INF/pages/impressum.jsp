@@ -1,9 +1,4 @@
-<html>
-<head>
-<style type="text/css">
-<%@include file="../css/style.css" %>
-</style>
-</head>
+<%@ include file="defaultIncludes.jsp" %>
 <body>
 	<div id="navigation">
 		<jsp:include page="navigation.jsp" />
@@ -14,4 +9,3 @@
 		
 	</div>
 </body>
-</html>

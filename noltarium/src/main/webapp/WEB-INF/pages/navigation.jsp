@@ -1,4 +1,5 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <ul>
-	<li><a href="welcome">Wilkommen</a></li>
-	<li><a href="impressum">Impressum</a></li>
+	<li><a href="<c:url value="/welcome"/>">Wilkommen</a></li>
+	<li><a href="<c:url value="/impressum"/>">Impressum</a></li>
 </ul>
