@@ -1,13 +1,18 @@
 <%@ include file="defaultIncludes.jsp"%>
-
 <body>
-	<div id="navigation">
-		<jsp:include page="navigation.jsp" />
-	</div>
-	<div id="content">
-		<h1>Tabellen Tet Seite Seite : ${message}</h1>
-		<div style='width: 800px;'>
-			<table class="display" id="resultsTable" cellpadding="0" cellspacing="0" border="0">
+
+	<div data-role="page">
+		<div data-role="navbar">
+			<jsp:include page="navigation.jsp" />
+		</div>
+		<!-- /navbar -->
+
+		<div data-role="header">
+			<h1>Willkommen</h1>
+		</div>
+		<div data-role="content">
+			<p>Test Tabelle</p>
+			<table class="hor-zebra" id="resultsTable" data-role="tableview">
 				<thead>
 
 					<tr>
@@ -24,9 +29,6 @@
 					</tr>
 				</c:forEach>
 			</table>
-
- 
-
 		</div>
 	</div>
 	<script type="text/javascript">

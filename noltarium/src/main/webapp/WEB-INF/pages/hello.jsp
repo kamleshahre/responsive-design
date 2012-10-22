@@ -1,26 +1,25 @@
-<%@ include file="defaultIncludes.jsp" %>
+<%@ include file="defaultIncludes.jsp"%>
 <body>
-	<div id="navigation">
-		<jsp:include page="navigation.jsp" />
+
+	<div data-role="page">
+		<div data-role="navbar">
+			<jsp:include page="navigation.jsp" />
+		</div>
+		<!-- /navbar -->
+
+		<div data-role="header">
+			<h1>Willkommen</h1>
+		</div>
+		<div data-role="content">
+			<p>willkommens seite</p>
+
+			<sec:authorize access="isAnonymous()">
+				<jsp:include page="login.jsp" />
+			</sec:authorize>
+		</div>
+
 	</div>
-	<div id="content">
-
-		<h1>Wilkommen : ${message}</h1>
-		neuer text
-		<sec:authorize access="isAnonymous()">
-		<jsp:include page="login.jsp" />
-		</sec:authorize>
-					<sec:authorize access="hasRole('ROLE_USER')">
-
-This content will only be visible to users who have
-the "supervisor" authority in their list of <tt>GrantedAuthority</tt>s.
-
-</sec:authorize>
-	</div>
-	<script>
-    $(function() {
-        $( ".fromButton" )
-            .button();
-    });
-</script>
+	<!-- 	<script> -->
+	<!-- 	 $(function() { // $(".fromButton").button(); // }); -->
+	<!-- 	</script> -->
 </body>
