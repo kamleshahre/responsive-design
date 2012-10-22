@@ -11,7 +11,7 @@
 
 	<http auto-config="true"  use-expressions="true">
 		<intercept-url pattern="/welcome" access="permitAll"/>
-		<intercept-url pattern="/intern/*" access="hasRole('ROLE_USER')"/>
+		<intercept-url pattern="/intern/**" access="hasRole('ROLE_USER')"/>
 
 		<form-login login-page="/login" 
 			authentication-failure-url="/loginfailed" 

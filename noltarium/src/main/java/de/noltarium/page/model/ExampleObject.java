@@ -1,14 +1,19 @@
 package de.noltarium.page.model;
 
+import org.hibernate.validator.constraints.NotEmpty;
+
 public class ExampleObject {
+	@NotEmpty
 	private String firstname;
+	@NotEmpty
 	private String lastname;
+	@NotEmpty
 	private String comment;
 
-	public ExampleObject()
-	{
-		
+	public ExampleObject() {
+
 	}
+
 	public ExampleObject(String firstname, String lastname, String comment) {
 		super();
 		this.firstname = firstname;
