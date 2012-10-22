@@ -23,6 +23,9 @@ public class WelcomController {
 	@RequestMapping(method = RequestMethod.GET)
 	public String printWelcome(ModelMap model) {
 
+		for (Object iterable_element : model.values()) {
+			LOGGER.debug("{}",iterable_element);
+		}
 		model.addAttribute("message", "Spring 3 MVC Hello World");
 
 		return "hello";
